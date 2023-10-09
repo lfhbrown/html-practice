@@ -30,7 +30,7 @@ const Login = () => {
               value={"Email"}
             />
             <input
-              type="text "
+              type="text"
               id="password"
               name="password"
               required
