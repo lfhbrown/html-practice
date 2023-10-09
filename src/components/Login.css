@@ -3,11 +3,11 @@
   height: 100vh;
   overflow: hidden;
 }
-.sequoia {
+.sequoia-img {
   display: flex;
   flex: 1; /*Takes up half the width of the container*/
-  max-height: 100%;
-  max-width: 100%;
+  max-height: auto;
+  max-width: auto;
 }
 .form-outer {
   flex: 1; /* Takes up half the width of the container */
@@ -19,5 +19,17 @@
 .form-inner {
   display: flex;
   text-align: center; /* Center the form content */
+  flex-direction: column;
+}
+.sign-in-up {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sign-in {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up {
+  display: flex;
   flex-direction: column;
 }

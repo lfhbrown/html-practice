@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "./Login.css";
-import GeneralShermanImage from "./General Sherman.jpg";
 import GiantSequoiaImage from "./Giant Sequoias.webp";
 
 const Login = () => {
@@ -8,17 +7,20 @@ const Login = () => {
   const forgotPassword = () => {};
   return (
     <div className="container">
-      <div className="sequoia">
-        {/* <img src={GeneralShermanImage} alt="General Sherman" /> */}
+      <div className="sequoia-img">
         <img src={GiantSequoiaImage} alt="Giant Sequoia" />
       </div>
       <div className="form-outer">
         <form>
           <div className="form-inner">
             <h1>The Sequoias</h1>
-            <div>
-              <button>Sign In</button>
-              <button>Sign Up</button>
+            <div className="sign-in-up">
+              <div className="sign-in">
+                <p>Sign In</p>
+              </div>
+              <div className="sign-up">
+                <p>Sign Up</p>
+              </div>
             </div>
             <input
               type="email"
