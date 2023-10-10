@@ -41,13 +41,13 @@ const Login = () => {
               required
               value={"Password"}
             />
-
-            <div className="enter">
-              <button>Enter</button>
-
-              <a href="forgot-password" onClick={forgotPassword}>
-                Forgot Password?
-              </a>
+            <div className="enter-forgot-password">
+              <div className="enter">
+                <button id="enter">Enter</button>
+              </div>
+              <div className="forgot-pas">
+                <button id="forgot-password">Forgot Password?</button>
+              </div>
             </div>
           </div>
         </form>
