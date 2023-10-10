@@ -16,10 +16,10 @@ const Login = () => {
             <h1>The Sequoias</h1>
             <div className="sign-in-up">
               <div className="sign-in">
-                <p>Sign In</p>
+                <button>Sign In</button>
               </div>
               <div className="sign-up">
-                <p>Sign Up</p>
+                <button id="sign-up">Sign Up</button>
               </div>
             </div>
             <input
@@ -36,9 +36,13 @@ const Login = () => {
               required
               value={"Password"}
             />
-            <a href="forgot-password" onClick={forgotPassword}>
-              Forgot Password?
-            </a>
+            <div className="enter">
+              <button>Enter</button>
+
+              <a href="forgot-password" onClick={forgotPassword}>
+                Forgot Password?
+              </a>
+            </div>
           </div>
         </form>
       </div>
