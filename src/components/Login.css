@@ -30,14 +30,13 @@
   width: auto; /* Make input fields take the full width */
   padding: 10px; /* Increase padding for input fields */
   margin-bottom: 10px; /* Add spacing between input fields */
-  font-size: 18px; /* Increase the font size for input fields */
+  font-size: 16px; /* Increase the font size for input fields */
 }
 .sign-in-up {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  border-bottom-style: solid;
-  margin-bottom: 20px;
+  /* border-bottom-style: solid; */
 }
 .sign-in {
   display: flex;
@@ -47,6 +46,8 @@
   background-color: rgb(217, 212, 168);
   border: none;
   font-weight: bold;
+  padding: 10px;
+  color: white;
 }
 .sign-in button:hover {
   color: white;
@@ -59,9 +60,24 @@
   background-color: rgb(217, 212, 168);
   border: none;
   font-weight: bold;
+  padding: 10px;
 }
-.sign-up button:hover {
+/* .sign-up button:hover {
   color: white;
+} */
+.sign-in-up-bb {
+  display: flex;
+  width: 200px;
+}
+.sign-in-bb {
+  border-top: solid white;
+  width: 50vw;
+  padding: 10px;
+}
+.sign-up-bb {
+  border-top: solid;
+  width: 50vw;
+  padding: 10px;
 }
 .enter {
   display: flex;

@@ -10,6 +10,7 @@ const Login = () => {
       <div className="sequoia-img">
         <img src={GiantSequoiaImage} alt="Giant Sequoia" />
       </div>
+      <div></div>
       <div className="form-outer">
         <form>
           <div className="form-inner">
@@ -21,6 +22,10 @@ const Login = () => {
               <div className="sign-up">
                 <button id="sign-up">Sign Up</button>
               </div>
+            </div>
+            <div className="sign-in-up-bb">
+              <div className="sign-in-bb"></div>
+              <div className="sign-up-bb"></div>
             </div>
             <input
               type="email"
@@ -36,6 +41,7 @@ const Login = () => {
               required
               value={"Password"}
             />
+
             <div className="enter">
               <button>Enter</button>
 
