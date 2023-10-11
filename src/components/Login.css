@@ -7,6 +7,22 @@
   display: flex;
   width: 50vw;
 }
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  font-size: 2rem;
+  color: darkgreen;
+}
+.olivedrab {
+  color: #7f2b0a;
+}
+.webkit-text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 .form-outer {
   width: 50vw;
   display: flex;
@@ -23,8 +39,10 @@
   padding-bottom: 10px;
 }
 .form-inner h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
 }
+
 .form-inner input[type="text"],
 .form-inner input[type="password"] {
   width: auto; /* Make input fields take the full width */
@@ -85,7 +103,6 @@
 #forgot-password:hover {
   color: white;
 }
-
 /* * {
   border: 1px solid black;
 } */

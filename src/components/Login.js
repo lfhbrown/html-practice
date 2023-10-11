@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./Login.css";
 import GiantSequoiaImage from "./Giant Sequoias.webp";
 import "./LoginForm";
+import { GiPineTree } from "react-icons/gi";
 
 const Login = () => {
   const [login, setLogin] = useState(null);
@@ -15,15 +16,19 @@ const Login = () => {
       <div className="form-outer">
         <form>
           <div className="form-inner">
-            <h1>The Sequoias</h1>
-            <div>
-              <div className="sign-in-up-container">
-                <div className="sign-in">
-                  <button>Sign In</button>
-                </div>
-                <div className="sign-up">
-                  <button>Sign Up</button>
-                </div>
+            <div className="heading-container">
+              <GiPineTree className="icon" />
+              <h1>
+                <span className="webkit-text-stroke">The</span>
+                <span className="olivedrab"> Sequoias</span>
+              </h1>
+            </div>
+            <div className="sign-in-up-container">
+              <div className="sign-in">
+                <button>Sign In</button>
+              </div>
+              <div className="sign-up">
+                <button>Sign Up</button>
               </div>
             </div>
             <div className="username-password-input-container">
@@ -44,7 +49,7 @@ const Login = () => {
             </div>
             <div className="enter-forgot-password-container">
               <div className="enter">
-                <button id="enter">Enter</button>
+                <button id="enter">Login </button>
               </div>
               <div className="forgot-password">
                 <button id="forgot-password">Forgot Password?</button>
