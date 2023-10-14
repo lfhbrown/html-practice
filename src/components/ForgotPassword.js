@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./ForgotPassword.css";
 
 const ForgotPassword = (props) => {
-  const [inputValue, setInputValue] = useState("");
+  const [email, setEmail] = useState("");
   const inputChangeHandler = (event) => {
-    setInputValue(event.target.value);
+    setEmail(event.target.value);
   };
   return (
     <div className="forgot-password-form-container">
@@ -19,18 +19,16 @@ const ForgotPassword = (props) => {
           <input
             type="email"
             id="forgot-password-email"
-            name="username"
+            name="email"
             required
-            value={inputValue}
+            value={email}
             onChange={inputChangeHandler}
             placeholder="Email"
           />
         </div>
         <div className="forgot-password-button-container">
           <div className="forgot-password-button-send">
-            <button id="forgot-password-button-send" type="button">
-              Send
-            </button>
+            <button id="forgot-password-button-send">Send</button>
           </div>
           <div className="forgot-password-button-cancel">
             <button

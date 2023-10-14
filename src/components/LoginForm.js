@@ -2,9 +2,20 @@ import React, { useState } from "react";
 import "./LoginForm.css";
 
 const LoginForm = (props) => {
-  const [inputValue, setInputValue] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const inputChangeHandler = (event) => {
-    setInputValue(event.target.value);
+    const { name, value } = event.target;
+    switch (name) {
+      case "email":
+        setEmail(value);
+        break;
+      case "password":
+        setPassword(value);
+        break;
+      default:
+        break;
+    }
   };
   return (
     <form>
@@ -25,9 +36,9 @@ const LoginForm = (props) => {
           <input
             type="text"
             id="username"
-            name="username"
+            name="email"
             required
-            value={inputValue}
+            value={email}
             onChange={inputChangeHandler}
             placeholder="Email"
           />
@@ -36,7 +47,7 @@ const LoginForm = (props) => {
             id="password"
             name="password"
             required
-            value={inputValue}
+            value={password}
             onChange={inputChangeHandler}
             placeholder="Password"
           />
