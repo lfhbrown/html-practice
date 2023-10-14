@@ -1,53 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
+import "./LoginForm.css";
 
-const LoginForm = () => {
+const LoginForm = (props) => {
+  const [inputValue, setInputValue] = useState("");
+  const inputChangeHandler = (event) => {
+    setInputValue(event.target.value);
+  };
   return (
-    <div>
-      <form>
-        <div className="form-inner">
-          <h1>The Sequoias</h1>
-          <div className="sign-in-up">
-            <div className="sign-in-up-child">
-              <div className="sign-in">
-                <button>Sign In</button>
-              </div>
-              <div className="sign-up">
-                <button id="sign-up">Sign Up</button>
-              </div>
-            </div>
-            <div className="sign-in-up-bb">
-              <div>
-                <div className="sign-in-bb"></div>
-                <div className="sign-up-bb"></div>
-              </div>
-            </div>
+    <form>
+      <div className="form-inner">
+        <div className="sign-in-up-container">
+          <div className="sign-in">
+            <button onClick={props.signIn} type="button">
+              Sign In
+            </button>
           </div>
-
+          <div className="sign-up">
+            <button onClick={props.signUp} type="button">
+              Sign Up
+            </button>
+          </div>
+        </div>
+        <div className="username-password-input-container">
           <input
-            type="email"
+            type="text"
             id="username"
             name="username"
             required
-            value={"Email"}
+            value={inputValue}
+            onChange={inputChangeHandler}
+            placeholder="Email"
           />
           <input
             type="password"
             id="password"
             name="password"
             required
-            value={"Password"}
+            value={inputValue}
+            onChange={inputChangeHandler}
+            placeholder="Password"
           />
-          <div className="enter-forgot-password">
-            <div className="enter">
-              <button id="enter">Enter</button>
-            </div>
-            <div className="forgot-pas">
-              <button id="forgot-password">Forgot Password?</button>
-            </div>
+        </div>
+        <div className="enter-forgot-password-container">
+          <div className="enter">
+            <button id="enter">Login </button>
+          </div>
+          <div className="forgot-password">
+            <button
+              onClick={props.forgotPassword}
+              id="forgot-password"
+              type="button"
+            >
+              Forgot Password?
+            </button>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 

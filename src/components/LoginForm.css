@@ -1,106 +1,60 @@
-.container {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-}
-.sequoia-img {
-  display: flex;
-  width: 50vw;
-}
-.form-outer {
-  width: 50vw;
-  display: flex;
-  justify-content: center; /* Center the form horizontally */
-  align-items: center; /* Center the form vertically */
-  background-color: rgb(217, 212, 168);
-}
-.form-inner {
-  display: flex;
-  text-align: center; /* Center the form content */
-  align-items: center;
-  flex-direction: column;
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-.form-inner h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-.form-inner input[type="email"],
+.form-inner input[type="text"],
 .form-inner input[type="password"] {
   width: auto; /* Make input fields take the full width */
   padding: 10px; /* Increase padding for input fields */
   margin-bottom: 10px; /* Add spacing between input fields */
   font-size: 16px; /* Increase the font size for input fields */
 }
-/* .sign-in-sign-up-row {
-    display: flex;
-    flex-direction: column;
-  } */
-.sign-in-up {
+.sign-in-up-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
 }
-.sign-in {
-  display: flex;
-  padding: 10px;
-}
-.sign-in button {
-  background-color: rgb(217, 212, 168);
-  border: none;
-  font-weight: bold;
-  padding: 10px;
-  color: black;
-}
-.sign-in button:hover,
-.sign-up button:hover {
-  color: white;
-}
-.sign-up {
-  display: flex;
-  padding: 10px;
-}
+.sign-in button,
 .sign-up button {
   background-color: rgb(217, 212, 168);
   border: none;
   font-weight: bold;
   padding: 10px;
-  color: black;
+  border-bottom: solid;
+  width: 100px;
 }
-.sign-in-up-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.sign-in button:hover,
+.sign-up button:hover {
+  color: white;
 }
-.sign-in-up-bb {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-}
-.sign-in-bb,
-.sign-up-bb {
-  border-top: solid;
-  width: 50vw;
-  padding: 20px;
-}
-.enter-forgot-password {
+.username-password-input-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  padding: 10px;
+}
+.enter-forgot-password-container {
+  display: flex;
+  flex-direction: column;
   color: black;
   align-items: center;
+  /* border: solid 1px; */
 }
-.enter,
-.forgot-password {
+#enter {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background-color: rgb(217, 212, 168);
+  border: solid;
+  font-weight: bold;
 }
-#enter,
+.forgot-password {
+  /* border: solid 1px; */
+  padding-top: 15px;
+}
 #forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
   background-color: rgb(217, 212, 168);
   border: none;
   font-weight: bold;
@@ -109,7 +63,6 @@
 #forgot-password:hover {
   color: white;
 }
-
 /* * {
-    border: 1px solid black;
-  } */
+  border: 1px solid black;
+} */

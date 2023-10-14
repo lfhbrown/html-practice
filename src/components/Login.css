@@ -7,10 +7,19 @@
   display: flex;
   width: 50vw;
 }
+.form-outer {
+  display: flex;
+  flex-direction: column;
+}
 .heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 36px;
+  padding-bottom: 10px;
+  position: relative;
 }
 .icon {
   font-size: 2rem;
@@ -35,74 +44,10 @@
   text-align: center; /* Center the form content */
   align-items: center;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 36px;
   padding-bottom: 10px;
 }
 .form-inner h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
 }
-
-.form-inner input[type="text"],
-.form-inner input[type="password"] {
-  width: auto; /* Make input fields take the full width */
-  padding: 10px; /* Increase padding for input fields */
-  margin-bottom: 10px; /* Add spacing between input fields */
-  font-size: 16px; /* Increase the font size for input fields */
-}
-.sign-in-up-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.sign-in button,
-.sign-up button {
-  background-color: rgb(217, 212, 168);
-  border: none;
-  font-weight: bold;
-  padding: 10px;
-  color: black;
-  border-bottom: solid;
-  width: 100px;
-}
-.sign-in button:hover,
-.sign-up button:hover {
-  color: white;
-}
-.username-password-input-container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.enter-forgot-password-container {
-  display: flex;
-  flex-direction: column;
-  color: black;
-  align-items: center;
-}
-#enter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: rgb(217, 212, 168);
-  border: solid;
-  font-weight: bold;
-}
-#forgot-password {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: rgb(217, 212, 168);
-  border: none;
-  font-weight: bold;
-}
-#enter:hover,
-#forgot-password:hover {
-  color: white;
-}
-/* * {
-  border: 1px solid black;
-} */

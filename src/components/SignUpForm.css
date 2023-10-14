@@ -1,0 +1,4 @@
+.fadeInComponent {
+  opacity: 1;
+  transition: opacity 9s ease-in-out; /* Adjust the duration as needed */
+}
