@@ -4,6 +4,7 @@ import GiantSequoiaImage from "./Giant Sequoias.webp";
 import SignUpForm from "./SignUpForm";
 import ForgotPassword from "./ForgotPassword";
 import { GiPineTree } from "react-icons/gi";
+
 import LoginForm from "./LoginForm";
 
 const Login = () => {

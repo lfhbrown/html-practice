@@ -4,6 +4,7 @@
   padding: 10px; /* Increase padding for input fields */
   margin-bottom: 10px; /* Add spacing between input fields */
   font-size: 16px; /* Increase the font size for input fields */
+  border-radius: 5px;
 }
 .sign-in-up-container {
   display: flex;
@@ -30,14 +31,14 @@
   flex-direction: column;
   padding: 10px;
 }
-.enter-forgot-password-container {
+.login-forgot-password-container {
   display: flex;
   flex-direction: column;
   color: black;
   align-items: center;
   /* border: solid 1px; */
 }
-#enter {
+#login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,14 +55,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px; */
   background-color: rgb(217, 212, 168);
   border: none;
   font-weight: bold;
 }
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(217, 212, 168);
+
+  font-weight: bold;
+  border-radius: 5px;
+}
 #enter:hover,
 #forgot-password:hover {
   color: white;
+}
+#show-password {
+  border: none;
+}
+.password-visibility-container {
+  /* background-color: white; */
+}
+.password-visibility-button {
+  position: relative; /* Position it relative to the parent container */
+
+  right: 10px; /* Adjust the distance from the right side as needed */
+  top: 75%; /* Position it vertically in the middle */
+  transform: translateY(-50%); /* Vertically center the button */
+  background: transparent; /* Transparent background to make it appear inside the input */
+  border: 0; /* Remove border */
+  cursor: pointer; /* Show a pointer cursor on hover */
 }
 /* * {
   border: 1px solid black;

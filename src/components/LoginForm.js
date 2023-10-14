@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
-
+import { BiShowAlt } from "react-icons/bi";
 const LoginForm = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   const inputChangeHandler = (event) => {
     const { name, value } = event.target;
     switch (name) {
@@ -42,19 +46,28 @@ const LoginForm = (props) => {
             onChange={inputChangeHandler}
             placeholder="Email"
           />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            value={password}
-            onChange={inputChangeHandler}
-            placeholder="Password"
-          />
+          <div>
+            <input
+              type={showPassword ? "text" : "password"}
+              id="password"
+              name="password"
+              required
+              value={password}
+              onChange={inputChangeHandler}
+              placeholder="Password"
+            />
+            {/* <button
+            className="password-visibility-button"
+            onClick={togglePasswordVisibility}
+            type="button"
+          >
+            <BiShowAlt />
+          </button> */}
+          </div>
         </div>
         <div className="enter-forgot-password-container">
           <div className="enter">
-            <button id="enter">Login </button>
+            <button id="enter">Login</button>
           </div>
           <div className="forgot-password">
             <button
