@@ -25,7 +25,11 @@ const Login = () => {
   return (
     <div className="container">
       <div className="sequoia-img">
-        <img src={GiantSequoiaImage} alt="Giant Sequoia" />
+        <img
+          src={GiantSequoiaImage}
+          alt="Giant Sequoia"
+          style={{ width: "100%" }}
+        />
       </div>
       <div className="form-outer">
         <div className="heading-container">

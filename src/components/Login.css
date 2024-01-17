@@ -29,7 +29,7 @@
   color: #7f2b0a;
 }
 .webkit-text-stroke {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 .form-outer {
