@@ -3,23 +3,19 @@
   height: 100vh;
   overflow: hidden;
 }
-.sequoia-img {
+.login-background {
   display: flex;
   width: 50vw;
 }
 .form-outer {
   display: flex;
   flex-direction: column;
+  width: 50vw;
 }
 .heading-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-  font-size: 36px;
-  padding-bottom: 10px;
-  position: relative;
 }
 .icon {
   font-size: 2rem;
@@ -37,7 +33,7 @@
   display: flex;
   justify-content: center; /* Center the form horizontally */
   align-items: center; /* Center the form vertically */
-  background-color: rgb(217, 212, 168);
+  background-color: white;
 }
 .form-inner {
   display: flex;
@@ -50,4 +46,10 @@
 .form-inner h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

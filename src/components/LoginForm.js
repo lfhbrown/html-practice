@@ -22,7 +22,7 @@ const LoginForm = (props) => {
     }
   };
   return (
-    <form>
+    <form className="form">
       <div className="form-inner">
         <div className="sign-in-up-container">
           <div className="sign-in">

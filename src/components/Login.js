@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
-import GiantSequoiaImage from "./Giant Sequoias.webp";
 import SignUpForm from "./SignUpForm";
 import ForgotPassword from "./ForgotPassword";
-import { GiPineTree } from "react-icons/gi";
-
 import LoginForm from "./LoginForm";
+import Pivot from "./Pivot2.png";
+import PivotLogo from "./PivotLogo.png";
 
 const Login = () => {
   const [selectedComponent, setSelectedComponent] = useState(1);
@@ -24,19 +23,17 @@ const Login = () => {
 
   return (
     <div className="container">
-      <div className="sequoia-img">
-        <img
-          src={GiantSequoiaImage}
-          alt="Giant Sequoia"
-          style={{ width: "100%" }}
-        />
+      <div className="login-background">
+        <img src={Pivot} alt="login-background" style={{ width: "100%" }} />
       </div>
       <div className="form-outer">
         <div className="heading-container">
-          <GiPineTree className="icon" />
-          <h1>
-            <span className="webkit-text-stroke">The</span>
-            <span className="olivedrab"> Sequoias</span>
+          <h1 className="logo-container">
+            <img
+              src={PivotLogo}
+              alt="PivotLogo"
+              style={{ width: "50%", height: "50%" }}
+            />
           </h1>
         </div>
 

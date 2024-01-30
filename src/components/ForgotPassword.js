@@ -11,8 +11,8 @@ const ForgotPassword = (props) => {
       <form id="forgot-password-form">
         <div className="forgot-password-message-container">
           <p id="forgot-password-message">
-            Please enter the email address you gave us when you registered and
-            we'll email you a link so you can create a new password.
+            Please enter the email address you used when you registered and
+            we'll email you a link to reset your password.
           </p>
         </div>
         <div className="forgot-password-email-container">

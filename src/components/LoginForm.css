@@ -15,7 +15,7 @@
 }
 .sign-in button,
 .sign-up button {
-  background-color: rgb(217, 212, 168);
+  background-color: white;
   border: none;
   font-weight: bold;
   padding: 10px;
@@ -24,7 +24,7 @@
 }
 .sign-in button:hover,
 .sign-up button:hover {
-  color: white;
+  color: goldenrod;
 }
 .username-password-input-container {
   display: flex;
@@ -55,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(217, 212, 168);
+  background-color: white;
   border: none;
   font-weight: bold;
 }
@@ -69,14 +69,14 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: rgb(217, 212, 168);
+  background-color: white;
 
   font-weight: bold;
   border-radius: 5px;
 }
 #enter:hover,
 #forgot-password:hover {
-  color: white;
+  color: goldenrod;
 }
 #show-password {
   border: none;
@@ -97,3 +97,7 @@
 /* * {
   border: 1px solid black;
 } */
+
+.form {
+  width: 50%;
+}
