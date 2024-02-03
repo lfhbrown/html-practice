@@ -94,10 +94,10 @@
   border: 0; /* Remove border */
   cursor: pointer; /* Show a pointer cursor on hover */
 }
-/* * {
-  border: 1px solid black;
-} */
 
 .form {
   width: 50%;
 }
+/* * {
+  border: 1px solid black;
+} */

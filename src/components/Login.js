@@ -20,6 +20,9 @@ const Login = () => {
   const forgotPassword = () => {
     setSelectedComponent(3);
   };
+  const fadeIn = () => {
+    return "fade-in";
+  };
 
   return (
     <div className="container">
@@ -27,36 +30,36 @@ const Login = () => {
         <img src={Pivot} alt="login-background" style={{ width: "100%" }} />
       </div>
       <div className="form-outer">
-        <div className="heading-container">
-          <h1 className="logo-container">
-            <img
-              src={PivotLogo}
-              alt="PivotLogo"
-              style={{ width: "50%", height: "50%" }}
-            />
-          </h1>
+        <div className="pivot-logo-container">
+          <img className="pivot-logo" src={PivotLogo} alt="PivotLogo" />
         </div>
 
         {selectedComponent === 1 && (
-          <LoginForm
-            signIn={signIn}
-            signUp={signUp}
-            forgotPassword={forgotPassword}
-          />
+          <div className={fadeIn()}>
+            <LoginForm
+              signIn={signIn}
+              signUp={signUp}
+              forgotPassword={forgotPassword}
+            />
+          </div>
         )}
         {selectedComponent === 2 && (
-          <SignUpForm
-            signIn={signIn}
-            signUp={signUp}
-            forgotPassword={forgotPassword}
-          />
+          <div className={fadeIn()}>
+            <SignUpForm
+              signIn={signIn}
+              signUp={signUp}
+              forgotPassword={forgotPassword}
+            />
+          </div>
         )}
         {selectedComponent === 3 && (
-          <ForgotPassword
-            signIn={signIn}
-            signUp={signUp}
-            forgotPassword={forgotPassword}
-          />
+          <div className={fadeIn()}>
+            <ForgotPassword
+              signIn={signIn}
+              signUp={signUp}
+              forgotPassword={forgotPassword}
+            />
+          </div>
         )}
       </div>
     </div>
